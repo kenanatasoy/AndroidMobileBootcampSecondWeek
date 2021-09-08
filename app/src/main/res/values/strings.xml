@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AndroidMobileBootcampSecondWeek</string>
+    <string name="initial_desc_text">Kelime testi sizin dil seviyenizi ölçmek içindir.
+        Test sonunda doğru ve yanlışlarınızı görebileceksiniz!</string>
+    <string name="cloud">cloud</string>
+    <string name="greater_cloud">greater_cloud</string>
+    <string name="decky_logo">decky_logo</string>
+    <string name="decky_bottom_left_logo">decky_bottom_left_logo</string>
+    <string name="skip">Atla</string>
+    <string name="word_test">Kelime Testi</string>
+    <string name="start_now">Şimdi Başla</string>
+    <string name="decky_bottom_logo">decky_bottom_logo</string>
+</resources>

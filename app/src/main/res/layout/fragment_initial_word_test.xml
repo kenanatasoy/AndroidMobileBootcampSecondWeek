@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/initial_fragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".InitialWordTestFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/skip"
+        android:textSize="@dimen/text_size_normal"
+        android:textStyle="bold"
+        android:textColor="@color/text_color_black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        />
+
+    <TextView
+        android:id="@+id/initial_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="180dp"
+        android:text="@string/word_test"
+        android:textColor="@color/text_color_black"
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/initial_desc_text"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:text="@string/initial_desc_text"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_size_normal"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/initial_title_text"
+        app:layout_constraintEnd_toEndOf="@+id/initial_title_text"
+        app:layout_constraintTop_toBottomOf="@+id/initial_title_text" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonInitial"
+        style="@style/PurpleButtonStyle"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="60dp"
+        android:drawableEnd="@drawable/ic_right_arrow"
+        android:paddingEnd="8dp"
+        android:text="@string/start_now"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/decky_bottom_logo"
+        app:layout_constraintEnd_toEndOf="@+id/initial_desc_text"
+        app:layout_constraintStart_toStartOf="@+id/initial_desc_text"
+        app:layout_constraintTop_toBottomOf="@+id/initial_desc_text" />
+
+    <ImageView
+        android:id="@+id/decky_bottom_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/decky_bottom_logo"
+        android:src="@drawable/ic_initial_word_test_bottom_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
