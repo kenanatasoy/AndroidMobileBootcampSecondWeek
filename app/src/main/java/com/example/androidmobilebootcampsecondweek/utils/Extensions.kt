@@ -4,6 +4,8 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
 
 inline fun<reified T : AppCompatActivity> Context.startActivity(block : Intent.() -> Unit = {}){
 
@@ -13,4 +15,10 @@ inline fun<reified T : AppCompatActivity> Context.startActivity(block : Intent.(
             block.invoke(it)
         }
     )
+}
+
+inline fun FragmentManager.startTransaction(func: FragmentTransaction.() -> Unit) {
+    val fragmentTransaction = beginTransaction()
+    fragmentTransaction.func()
+    fragmentTransaction.commit()
 }

@@ -2,6 +2,7 @@ package com.example.androidmobilebootcampsecondweek
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.androidmobilebootcampsecondweek.utils.startTransaction
 
 class InitialWordTestActivity : AppCompatActivity() {
 
@@ -10,9 +11,10 @@ class InitialWordTestActivity : AppCompatActivity() {
         setContentView(R.layout.activity_initial_word_test)
 
 
-        supportFragmentManager.beginTransaction().apply{
+
+        supportFragmentManager.startTransaction {
             add(R.id.activity_initial_word_test, InitialWordTestFragment())
-            commit()
         }
+
     }
 }
