@@ -40,6 +40,7 @@ class InitialWordTestFragment : Fragment() {
             intent.putExtra("string", string)
             intent.putExtra("string array", stringArr)
             activity?.startActivity(intent)
+            // starting another activity on button click with data payload pushed to the other activity
         }
 
     }

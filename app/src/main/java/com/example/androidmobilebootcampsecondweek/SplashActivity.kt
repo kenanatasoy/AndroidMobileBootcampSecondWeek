@@ -21,6 +21,7 @@ class SplashActivity : AppCompatActivity() {
                     Intent()
                 }
                 finish()
+                // starting the splash activity on create and keeping it on the screen for 3 seconds
             }
         }, ONCREATEDELAY)
 

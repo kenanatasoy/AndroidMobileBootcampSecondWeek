@@ -14,7 +14,7 @@ class InitialWordTestActivity : AppCompatActivity() {
 
         supportFragmentManager.startTransaction {
             add(R.id.activity_initial_word_test, InitialWordTestFragment())
-        }
+        } // call to the extension function for placing fragments in activities
 
     }
 }
