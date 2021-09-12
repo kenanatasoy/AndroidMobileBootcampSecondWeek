@@ -2,6 +2,7 @@ package com.example.androidmobilebootcampsecondweek
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.androidmobilebootcampsecondweek.fragments.InitialWordTestFragment
 import com.example.androidmobilebootcampsecondweek.utils.startTransaction
 
 class InitialWordTestActivity : AppCompatActivity() {

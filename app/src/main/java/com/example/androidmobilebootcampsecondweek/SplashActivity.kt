@@ -18,7 +18,7 @@ class SplashActivity : AppCompatActivity() {
         Timer().schedule(object : TimerTask() {
             override fun run() {
                 startActivity<InitialWordTestActivity>{
-                    Intent()
+
                 }
                 finish()
                 // starting the splash activity on create and keeping it on the screen for 3 seconds

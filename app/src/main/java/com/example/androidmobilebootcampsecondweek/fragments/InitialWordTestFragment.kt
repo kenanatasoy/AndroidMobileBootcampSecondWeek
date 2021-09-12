@@ -1,4 +1,4 @@
-package com.example.androidmobilebootcampsecondweek
+package com.example.androidmobilebootcampsecondweek.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import android.content.Intent
+import com.example.androidmobilebootcampsecondweek.R
+import com.example.androidmobilebootcampsecondweek.WordTestActivity
 
 
 /**
